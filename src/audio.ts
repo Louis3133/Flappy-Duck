@@ -1,6 +1,6 @@
 export let audioCtx: AudioContext | null = null;
 export let analyser: AnalyserNode | null = null;
-let timeData: Float32Array | null = null;
+let timeData: Float32Array<ArrayBuffer> | null = null;
 
 export function initAudio() {
   if (!navigator.mediaDevices?.getUserMedia) {
