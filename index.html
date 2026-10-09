@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/src/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flappy Duck</title>
+  </head>
+  <body>
+
+    
+    <p data-text="0" class="score hidden" id="scoreDisplay">0</p>
+
+    <img id="mainTitle" class="mainTitle" src="/title.png" alt="Flappy Duck">
+
+    </div>
+
+    <div class="keyAndPlayground">
+       <canvas class="playground" id="canva"></canvas>
+    </div>
+
+    <div>
+
+    </div>
+
+    <div id="finishPanel" class="finishPanel hidden">
+      <img src="/game-over.png" alt="Game Over">
+        <div class="finishContent">
+            <p class="finalScoreLabel">Score</p>
+            <p class="finalScore" id="finalScore"></p>
+        </div>
+        <button class="restartButton" id="restartButton">Restart</button>
+    </div>
+
+    <div id="pauseOverlay" class="pauseOverlay hidden">
+      <img src="/pause.png" alt="Pause">
+    </div>
+
+    
+    <div id="startButton" class="wrapperButton">
+    <button  class="startButton">Start</button>
+    </div>
+    <button id="pauseButton" class="stateButton continueButton hidden"><img src="/pauseButton.svg"></button>
+    <button id="continueButton" class="stateButton continueButton hidden"><img src="/continueButton.svg"></button>
+
+    <section class="floor">
+      <canvas class="visualizer"></canvas>
+    </section>
+    
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
